@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Booking | AgriConnect</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Contact & Booking</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="horticulture.html">Horticulture Tips</a></li>
+        <li><a href="contact.html">Contact & Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Book Your Order</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="product">Product:</label>
+      <select id="product" required>
+        <option value=\"\">--Select--</option>
+        <option value=\"Cabbages\">Cabbages</option>
+        <option value=\"Capsicum\">Capsicum</option>
+        <option value=\"Managu\">Managu</option>
+        <option value=\"Carrots\">Carrots</option>
+        <option value=\"Onions\">Onions</option>
+      </select>
+
+      <label for="quantity\">Quantity (Kg):</label>
+      <input type="number" id="quantity" min="1" required>
+
+      <label for="phone\">Phone Number:</label>
+      <input type="tel" id="phone\" value=\"0769636637\" required>
+
+      <button type="submit\">Submit Booking</button>
+    </form>
+    <p id="confirmationMessage"></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AgriConnect Emorganic Farm | Call: 0769636637</p>
+  </footer>
+</body>
+</html>
+
